@@ -1,0 +1,157 @@
+<html>
+
+<head>
+    <title>
+        Christmas
+    </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+    </div>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="poem.html">Read</a>
+                    <a class="nav-item nav-link" href="binge.html">Watch</a>
+                    <a class="nav-item nav-link" href="playlist.html">Listen</a>
+                    <a class="nav-item nav-link" href="wishlist.html">Wishlist</a>
+                </div>
+            </div>
+        </nav>
+        <div class="row-2">
+            <h2 class="checklist">All I Want For Christmas Checklist</h2>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <h3>Books</h3>
+                <div class="row">
+                    <div class="col-3">
+                        <img src="Hidden.jpg" style="width: 100%" alt="Hidden Figures by Margot Lee Shetterly" onclick="myFunction(this);">
+                    </div>
+                    <div class="col-3">
+                        <img src="Crime.jpg" style="width: 100%" alt="Crime and Punishment by Fyodor Dostoyevsky" onclick="myFunction(this);">
+                    </div>
+                    <div class="col-3">
+                        <img src="Radical.jpg" style="width: 100%" alt="Radical Candor: How to Get What You Want by Saying What You Mean by Kim Scott" onclick="myFunction(this);">
+                    </div>
+                    <div class="col-3">
+                        <img src="Spin.jpg" style="width: 100%" alt="SPIN Selling by Neil Rackham" onclick="myFunction(this);">
+                    </div>
+                    <div class="col-3">
+                        <img src="Natural.jpg" style="width: 100%" alt="Natural Capitalism: Creating the Next Industrial Revoultion by Paul Hawken, Amory Lovins, and Hunter Lovins" onclick="myFunction(this);">
+                    </div>
+                    <div class="col-3">
+                        <img src="Blind.jpg" style="width: 100%" alt="Random Books You Suggest!" onclick="myFunction(this);">
+                    </div>
+                </div>
+                <div class="contain">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+                    <img id="expandedImg" style="width:100%">
+
+                    <div id="imgtext"></div>
+                </div>
+                <script>
+                    function myFunction(imgs) {
+                        var expandImg = document.getElementById("expandedImg");
+                        var imgText = document.getElementById("imgtext");
+                        expandImg.src = imgs.src;
+                        imgText.innerHTML = imgs.alt;
+                        expandImg.parentElement.style.display = "block";
+                    }
+
+                </script>
+            </div>
+            <div class="col-4">
+                <h3>Supplies</h3>
+                <div id="wrapper">
+                    <div class="scrollbar" id="style">
+                        <div class="force-overflow">
+                            <ol>
+                                <li class="wish">Muji Pen with Refills</li>
+                                <li class="wish">A5 Muji Binders with Paper Refills</li>
+                                <li class="wish">Mechanical Pencil with Lead Refills</li>
+                                <li class="wish">Small Sharpener with Container</li>
+                                <li class="wish">Yellow Pads</li>
+                                <li class="wish">Long Clear Collapsible Folder with Divisions</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <h3>Others</h3>
+                <div id="wrapper">
+                    <div class="scrollbar" id="style">
+                        <div class="force-overflow">
+                            <ol>
+                                <li class="wish">Bag with 13-inch Laptop Sleeve</li>
+                                <li class="wish">Loafer</li>
+                                <li class="wish">Messenger Bag</li>
+                                <li class="wish">Duffle Bag</li>
+                                <li class="wish">Portable Pocket-sized Screen Projector</li>
+                                <li class="wish">Laptop Pouch/Sleeve</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
